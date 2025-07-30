@@ -1,2 +1,2 @@
-[[nodiscard]] int harness();
-[[nodiscard]] int wait_for_sleigh();
+[[__nodiscard__]] int harness();
+[[__nodiscard__]] int wait_for_sleigh();

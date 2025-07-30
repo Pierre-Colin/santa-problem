@@ -7,7 +7,10 @@ struct semaphore
 	unsigned count;
 };
 
-[[nodiscard]] int sem_init(struct semaphore sem[static 1], int count);
+[[__nodiscard__]] int sem_init(struct semaphore sem[static 1], int count);
 void sem_destroy(struct semaphore sem[static 1]);
-[[nodiscard]] int sem_increment(struct semaphore sem[static 1], unsigned n);
-[[nodiscard]] int sem_decrement(struct semaphore sem[static 1]);
+
+[[__nodiscard__]]
+int sem_increment(struct semaphore sem[static 1], unsigned n);
+
+[[__nodiscard__]] int sem_decrement(struct semaphore sem[static 1]);
